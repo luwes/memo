@@ -1,13 +1,15 @@
 # memo
 
-Memoization with shallowly comparing object arguments.
+Memoization with shallowly comparing object arguments with support for document fragments.
+
+Based on [fast-memoize.js](https://github.com/caiogondim/fast-memoize.js) by Caio Gondim.
 
 ```sh
-npm i @luwes/memo
+npm i memo
 ```
 
 ```js
-import memo from '@luwes/memo';
+import { memo } from 'memo';
 
 let called = 0
 const memoized = memo(
