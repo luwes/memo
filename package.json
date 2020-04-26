@@ -1,6 +1,6 @@
 {
   "name": "memo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Memoization with shallowly comparing object arguments.",
   "type": "module",
   "main": "memo.js",
@@ -10,7 +10,11 @@
     "test": "node test.js",
     "minify": "terser memo.js -o memo.min.js -c -m toplevel"
   },
-  "keywords": ["memo", "memoize", "memoization"],
+  "keywords": [
+    "memo",
+    "memoize",
+    "memoization"
+  ],
   "author": "Wesley Luyten <me@wesleyluyten.com> (https://wesleyluyten.com)",
   "license": "MIT",
   "bugs": {
