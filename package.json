@@ -10,13 +10,17 @@
     "test": "node test.js",
     "minify": "terser memo.js -o memo.min.js -c -m toplevel"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["memo", "memoize", "memoization"],
+  "author": "Wesley Luyten <me@wesleyluyten.com> (https://wesleyluyten.com)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luwes/memo/issues"
+  },
+  "homepage": "https://github.com/luwes/memo#readme",
   "devDependencies": {
     "browser-env": "^3.3.0",
-    "sinuous": "^0.24.0",
-    "tape": "^4.13.0",
-    "terser": "^4.6.3"
+    "sinuous": "^0.27.0",
+    "tape": "^5.0.0",
+    "terser": "^4.6.12"
   }
 }
