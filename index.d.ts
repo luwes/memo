@@ -1,16 +1,7 @@
-import { JSXInternal } from '../../src/jsx';
+type Func = (...args: any[]) => any;
 
-type Props =
-  | JSXInternal.HTMLAttributes &
-    Record<string, any>
-  | null
-
-type Child =
-  | Node
-  | Node[]
-
-interface Func {
-  (props: Props): Child
+interface MemoizeFunc {
+  <F extends Func>(fn: F): F;
 }
 
-export function memo<T>(func: Func): Func;
+export const memo: MemoizeFunc;
